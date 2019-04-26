@@ -4,14 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>reveal.js</title>
+    <title>Open Source no es gratis</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Printing and PDF exports -->
     <script>
@@ -22,11 +25,114 @@
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
   </head>
+
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section class="center">
+          <h1>Open Source no es gratis</h1>
+          <h3>Porqué debería importarte</h3>
+          <p>
+            <small>
+              Santos Gallegos
+              -
+              <a href="mailto:santos_g@outlook.com">
+                santos_g@outlook.com
+              </a>
+            </small>
+            <br>
+            <small>
+              @stsewd
+              <a href="http://github.com/stsewd"><i class="fab fa-github"></i></a>
+              <a href="http://twitter.com/stsewd"><i class="fab fa-twitter"></i></a>
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <h2>¿Quién soy?</h2>
+          <ul>
+            <li>Python developer (web)</li>
+            <li>Read the Docs</li>
+            <li>
+              <a href="https://stsewd.github.io/" target="_blank">https://stsewd.github.io/</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Libertades</h2>
+          <ol start="0">
+            <li>La libertad de usar el programa, con cualquier propósito</li>
+            <li>La libertad de estudiar cómo funciona el programa y modificarlo, adaptándolo a las propias necesidades</li>
+            <li>La libertad de distribuir copias del programa, con lo cual se puede ayudar a otros usuarios</li>
+            <li>La libertad de mejorar el programa y hacer públicas esas mejoras a los demás, de modo que toda la comunidad se beneficie</li>
+          </ol>
+        </section>
+
+        <section>
+          <p>
+            Open Source es una cuestión de libertad, <strong>no de precio</strong>
+          </p>
+          <img src="img/isnt-about-money.gif" alt="Joker burning money scene" height="400px"/>
+        </section>
+
+        <section>
+          Probablemente todos los días uses software de código abierto,
+          sin dar nada a cambio.
+        </section>
+
+        <section>
+          Tu producto
+          Tu trabajo
+          Tu profesión
+          Tu empresa
+          depende de software libre
+          y no estás haciendo nada para mantenerlo
+        </section>
+
+        <section>
+          Maintainers no son para siempre
+
+          Guido, Django rest framework, Read the Docs
+        </section>
+
+        <section>
+          Una compañia se toma un proyecto open source
+          Pierde independencia
+        </section>
+
+        <section>
+          Haces dinero con software de código abierto,
+          pero no pagas nada por usarlo.
+        </section>
+
+        <section>
+          Software es escrito y mantenido por personas
+        </section>
+
+        <section>
+          Probablemente en su tiempo libre
+        </section>
+
+        <section>
+          Persona leyendo tu comentario
+
+          Sé amable,
+          ayuda a buscar la solución
+        </section>
+
+        <section>
+          Pase de ser consumidor a ser colaborador
+        </section>
+
+        <section>
+          Dona dinero
+          Dona tu tiempo
+          Dona tus habilidades
+
+          s/Dona/Intercambia/
+        </section>
       </div>
     </div>
 
@@ -37,6 +143,9 @@
       // - https://github.com/hakimel/reveal.js#configuration
       // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
+        history: true,
+        center: false,
+        maxScale: 0.7,
         dependencies: [
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
