@@ -1,484 +1,507 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Open Source no es gratis</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/white.css">
+  <title>Open Source no es gratis</title>
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css" id="theme">
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/github-gist.css" id="highlight-theme">
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-  </head>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section class="center">
-          <h1>Open Source no es gratis</h1>
-          <h3>Porqué debería importarte</h3>
+  <style type="text/css" media="screen">
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .blue {
+      color: #3e7bac;
+    }
+
+    .orange {
+      color: orange;
+    }
+
+    .gray {
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="center">
+        <h1>FLOSS no es gratis</h1>
+        <h3>Porqué debería importarte</h3>
+        <p>
+          <small>
+            Santos Gallegos
+            -
+            <a href="mailto:stsewd@protonmail.com">
+              stsewd@protonmail.com
+            </a>
+          </small>
+          <br>
+          <small>
+            @stsewd
+            <a href="http://github.com/stsewd"><i class="fab fa-github"></i></a>
+            <a href="http://twitter.com/stsewd"><i class="fab fa-twitter"></i></a>
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <h2>WHOAMI</h2>
+        <ul>
+          <li>Santos Gallegos</li>
+          <li>Read the Docs</li>
+          <li><i class="blue fab fa-python"></i> developer (web)</li>
+          <li>@stsewd</li>
+          <li>
+            <a href="https://stsewd.github.io/" target="_blank">https://stsewd.github.io/</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Libertades</h2>
+
+        <section>
+          <ol start="0">
+            <li>La libertad de usar el programa, con cualquier propósito</li>
+            <li>La libertad de estudiar cómo funciona el programa y modificarlo, adaptándolo a las propias necesidades
+            </li>
+            <li>La libertad de distribuir copias del programa, con lo cual se puede ayudar a otros usuarios</li>
+            <li>La libertad de mejorar el programa y hacer públicas esas mejoras a los demás, de modo que toda la
+              comunidad se beneficie</li>
+          </ol>
+
+          <aside class="notes">
+            <p>
+              Aclaro que voy a usar el término Open Source para referirme a Software libre y de código abiero.
+              (por razones desconocidas y porque es más corto)
+            </p>
+            <p>
+              Antes de empezar, vamos a repazar un poco sobre las libertades del open source.
+              Probablemente las van a ver un montón el día de hoy.
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <ol start="0">
+            <li>La <strong>libertad</strong> de usar el programa, con cualquier propósito</li>
+            <li>La <strong>libertad</strong> de estudiar cómo funciona el programa y modificarlo, adaptándolo a las
+              propias necesidades</li>
+            <li>La <strong>libertad</strong> de distribuir copias del programa, con lo cual se puede ayudar a otros
+              usuarios</li>
+            <li>La <strong>libertad</strong> de mejorar el programa y hacer públicas esas mejoras a los demás, de modo
+              que toda la comunidad se beneficie</li>
+          </ol>
+        </section>
+      </section>
+
+      <section>
+        <p>
+          Open Source es una cuestión de libertad, <strong>no de precio</strong>
+        </p>
+        <img src="img/isnt-about-money.gif" alt="Joker burning money scene" height="400px" />
+
+        <aside class="notes">
           <p>
-            <small>
-              Santos Gallegos
-              -
-              <a href="mailto:santos_g@outlook.com">
-                santos_g@outlook.com
+            Esta charla está enfocada en la parte del precio, aún muchas personas confunden open source con tener todo
+            gratis
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <p>Probablemente uses software open source todos los días</p>
+        <p>En tu escuela/universidad</p>
+        <p>En tu trabajo</p>
+        <p>En tus tiempos de ocio</p>
+        <p class="fragment">Pero...</p>
+      </section>
+
+      <section class="center">
+        <h2>¿Pagaste algo por usarlo?</h2>
+        <aside class="notes">
+          <p>Probablemente estás haciendo dinero usando open source</p>
+        </aside>
+      </section>
+
+      <section class="center">
+        <h2>¿Diste algo a cambio por usarlo?</h2>
+        <aside class="notes">
+          <ul>
+            <li>
+              Probablemente lo descargaste, leíste la documentación, todo estaba perfectamente hecho.
+            </li>
+            <li>
+              Había un anuncio si podías donar algo al proyecto, lo ignoraste
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="center">
+        <img src="img/first-of-all.gif" alt="" height="400px" />
+      </section>
+
+      <section class="center">
+        <p>
+          Software no crece en los árboles...
+        </p>
+        <p class="fragment">
+          <strong>Es escrito por personas</strong>
+        </p>
+        <img src="img/tree.gif" alt="" />
+
+        <aside class="notes">
+          <p>Un poco obvio, pero vale la pena recordarlo</p>
+        </aside>
+      </section>
+
+      <section class="center">
+        <h2>Personas</h2>
+        <aside class="notes">
+          <ul>
+            <li>Personas que lo hacen en su tiempo libre</li>
+            <li>Como pasatiempo</li>
+            <li>Fuera de sus horas de trabajo</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section>
+        <h2>Maintainers no son eternos</h2>
+        <p>
+          <del>Tranvia</del> Bus Factor
+        </p>
+        <small>
+          <a href="https://en.wikipedia.org/wiki/Bus_factor">
+            https://en.wikipedia.org/wiki/Bus_factor
+          </a>
+        </small>
+        <img src="img/tranvia.jpg" alt="" />
+
+        <aside class="notes">
+          <p>
+            (ya que estamos en Cuenca, es el tranvia factor)
+          </p>
+          <p>
+            Es una medida del riesgo de que el conocimiento sobre un proyecto
+            no sea compartido con el resto en caso de que un miembro sea atropellado por un autobús.
+
+            Si sólo una persona tiene conocimiento del proyecto, no está bien.
+          </p>
+          <p>
+            Entre más alto es el factor del autobus, mejor.
+            Es decir, entre más personas hayan para ser atropelladas, mejor.
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <h2>Sus vidas continuán más allá de las computadoras</h2>
+        <p>La personas tienen otras actividades, tienen familia, un trabajo, etc</p>
+        <img src="img/sleeping-on-computer.gif" alt="" />
+
+        <aside class="notes">
+          <p>
+            Las personas no pueden estar toda su vida manteniendo un proyecto,
+            usan su tiempo para otras actividades, y está bien.
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <h2>Pierden el interés</h2>
+        <p>Paquete de NPM infectado con backdoor</p>
+        <small>
+          <a href="https://github.com/dominictarr/event-stream/issues/116" target="_blank">
+            https://github.com/dominictarr/event-stream/issues/116
+          </a>
+        </small>
+        <img src="img/npm-package-backdoor.png" alt="" />
+
+        <aside class="notes">
+          <p>
+            Cada día aprendemos cosas nuevas,
+            cambiamos o dejamos de usar herramientas, frameworks, lenguajes de programación.
+            Y está bien.
+          </p>
+          <p>
+            Este caso del año pasado,
+            un paquete popular de NPM fue infectado con un backdoor,
+            el mantainer cedió el proyecto a otra pesona, quien resultó ser un usuario malicioso.
+            ¿La razón? El mantainer ya no usaba ese proyecto.
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <h2>Stress (burnout)</h2>
+        <div style="text-align: left;">
+          <img src="img/guido.jpg" alt="" / style="float: left; margin: 1em;">
+          <p>
+            I don't ever want to have to fight so hard for a
+            PEP and find that so many people despise my decisions...
+            I'm tired, and need a very long break.
+          </p>
+          <em>Guido van Rossum, Julio 2018</em>
+        </div>
+        <small>
+          <a href="https://mail.python.org/pipermail/python-committers/2018-July/005664.html" target="_blank">
+            https://mail.python.org/pipermail/python-committers/2018-July/005664.html
+          </a>
+        </small>
+
+        <aside class="notes">
+          <p>
+            El internet es un lugar muy caótico.
+            A veces necesitamos un descanso.
+            Y está bien.
+          </p>
+          <p>
+            Guido van Rossum,creador de Python, renunció a su cargo de dictador benevolente de por vida.
+            ¿La razón? Un nuevo feature del lenguaje fue aprobado por Guido y hubo muchas controversias, mcuhas quejas,
+            pero pocas soluciones. El feature se había propuest hace mucho tiempo, pero nadie lo tomó en cuenta.
+          </p>
+        </aside>
+      </section>
+
+      <section class="center">
+        <h2>Personas...</h2>
+        <aside class="notes">
+          <p>
+            Todo el software open source que usamos depende de algo tan frágil.
+            Personas, y en muchos casos no personas, sino persona.
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <div>
+          <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu producto</p>
+          <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu trabajo</p>
+          <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu profesión</p>
+          <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu empresa</p>
+          <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu libertad</p>
+          <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu seguridad</p>
+        </div>
+        <p>
+          Dependen de software open source...
+        </p>
+
+        <aside class="notes">
+          <p>
+            Todas estas cosas y más dependen del open source
+          </p>
+        </aside>
+      </section>
+
+      <section>
+        <p>
+          ...y probablemente no estás haciendo <strong>nada para mantenerlo</strong>
+        </p>
+        <img src="img/this-is-fine.jpg" alt="" />
+
+        <aside class="notes">
+          <p>
+            Y no, no está bien.
+            Adiós a tu framework favorito, a tu lenguaje de programación favorito.
+            Y el editor/IDE en donde escribes tu código, a tu navegador también dile adiós.
+          </p>
+          <p>
+            Esto no suena bien...
+          </p>
+        </aside>
+      </section>
+
+      <section class="center">
+        <h2>¿Cómo puedo ayudar?</h2>
+      </section>
+
+      <section>
+        <h2>¿Cómo puedo ayudar?</h2>
+        <section>
+          <ul>
+            <li>Donando tu dinero</li>
+            <li>Donando tu tiempo</li>
+            <li>Donando tu conocimiento</li>
+            <li>Donando tus habilidades</li>
+          </ul>
+
+          <aside class="notes">
+            <p>
+              Dinero, motiva a los mantainers, probablemente tomar el proyecto como si fuera un trabajo
+            </p>
+            <p>
+              Tu tiempo y conocimiento enviando mejoras, ayudando a solucionar problemas
+            </p>
+            <p>
+              Open source es más que software: Difusión, redes sociales, documentación, diseño, asuntos legales
+            </p>
+            <p>
+              Habla con tus jefes, para que puedas usar horas de trabajo para mantener proyectos open source
+              que la empresa depende de
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <p>
+            Donar...
+          </p>
+
+          <aside class="notes">
+            Donar... esa palabra no me gusta, suena como algo opcional, algo que no lo vamos a hacer
+          </aside>
+        </section>
+
+        <section>
+          <pre style="text-align: center;">s/Donando/Intercambiando/</pre>
+          <ul>
+            <li>Intercambiando tu dinero</li>
+            <li>Intercambiando tu tiempo</li>
+            <li>Intercambiando tu conocimiento</li>
+            <li>Intercambiando tus habilidades</li>
+          </ul>
+
+          <aside class="notes">
+            <p>Aún podríamos mejorar esto, pero está bien por ahora.</p>
+            <p>Por qué mejorarlo? A mi punto de vista son las instituciones, empresas quienes más se benefician del open
+              source y comunidades, no al revés.</p>
+          </aside>
+        </section>
+      </section>
+
+      <section>
+        <h2>Open source es más que computadoras</h2>
+        <section>
+          <p>Sé amable y respetuoso con la comunidad, nadie les está pagando para leer tus comentarios quejándote</p>
+
+          <aside class="notes">
+            <p>Evita causar burnout a los mantainers</p>
+            <p>Ayuda a buscar soluciones, no sólo problemas</p>
+          </aside>
+        </section>
+
+        <section>
+          <p>Ayuda difundiendo, organizando eventos, participa en tus comunidades locales</p>
+
+          <aside class="notes">
+            Escribiendo un blog, dándo charlas sobre el proyecto.
+            Organizando eventos como este.
+          </aside>
+        </section>
+      </section>
+
+      <section>
+        <h2>Y si, se puede generar dinero con proyectos open source</h2>
+        <p>Varios proyectos son auto sustentables o generan ingresos a sus mantainers</p>
+        <ul>
+          <li>Neovim</li>
+          <li>Django Rest Framework</li>
+          <li>Read the Docs</li>
+          <li>Y muchos más, pero aún así estos proyectos necesitan de tu ayuda</li>
+        </ul>
+
+        <aside class="notes">
+          <p>Existen varios modelos de negocio al rededor de software open source</p>
+          <p>Rcuerda que no se trata sobre precio o dar todo gratis</p>
+        </aside>
+      </section>
+
+      <section>
+        <li>
+          3. La libertad de mejorar el programa y hacer públicas esas mejoras a los demás,
+          <strong>de modo que toda la comunidad se beneficie</strong>
+        </li>
+        <aside class="notes">
+          <p>Recuerda la libertad número 3, se trata de que toda la comunidad se beneficie.</p>
+        </aside>
+      </section>
+
+      <section>
+        <h2>
+          ¿Estás listo para pasar de ser consumidor a ser colaborador?
+        </h2>
+        <footer class="footer fragment">
+          <p>
+            <small class="text-center">
+              <a href="https://stsewd.github.io/">
+                <span>
+                  Más sobre mi
+                </span>
+                <br />
+                <span>https://stsewd.github.io/</span>
               </a>
             </small>
-            <br>
+          </p>
+
+          <p>
+            <small class="text-center">
+              <a href="https://github.com/stsewd/charla-open-source-no-es-gratis">
+                <span>
+                  Código fuente en GitHub <i class="fas fa-code-branch"></i>
+                </span>
+                <br />
+                <span>https://github.com/stsewd/charla-open-source-no-es-gratis/</span>
+              </a>
+            </small>
+          </p>
+
+          <p>
             <small>
               @stsewd
               <a href="http://github.com/stsewd"><i class="fab fa-github"></i></a>
               <a href="http://twitter.com/stsewd"><i class="fab fa-twitter"></i></a>
             </small>
           </p>
-        </section>
+        </footer>
 
-        <section>
-          <h2>¿Quién soy?</h2>
-          <ul>
-            <li>Python developer (web)</li>
-            <li>Read the Docs</li>
-            <li>@stsewd</li>
-            <li>
-              <a href="https://stsewd.github.io/" target="_blank">https://stsewd.github.io/</a>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Libertades</h2>
-
-          <section>
-            <ol start="0">
-              <li>La libertad de usar el programa, con cualquier propósito</li>
-              <li>La libertad de estudiar cómo funciona el programa y modificarlo, adaptándolo a las propias necesidades</li>
-              <li>La libertad de distribuir copias del programa, con lo cual se puede ayudar a otros usuarios</li>
-              <li>La libertad de mejorar el programa y hacer públicas esas mejoras a los demás, de modo que toda la comunidad se beneficie</li>
-            </ol>
-
-            <aside class="notes">
-              <p>
-                Aclaro que voy a usar el término Open Source para referirme a Software libre y de código abiero.
-                (por razones desconocidas y porque es más corto)
-              </p>
-              <p>
-                Antes de empezar, vamos a repazar un poco sobre las libertades del open source.
-                Probablemente las van a ver un montón el día de hoy.
-              </p>
-            </aside>
-          </section>
-
-          <section>
-            <ol start="0">
-              <li>La <strong>libertad</strong> de usar el programa, con cualquier propósito</li>
-              <li>La <strong>libertad</strong> de estudiar cómo funciona el programa y modificarlo, adaptándolo a las propias necesidades</li>
-              <li>La <strong>libertad</strong> de distribuir copias del programa, con lo cual se puede ayudar a otros usuarios</li>
-              <li>La <strong>libertad</strong> de mejorar el programa y hacer públicas esas mejoras a los demás, de modo que toda la comunidad se beneficie</li>
-            </ol>
-          </section>
-        </section>
-
-        <section>
-          <p>
-            Open Source es una cuestión de libertad, <strong>no de precio</strong>
+        <aside class="notes">
+          <p>¿Preguntas?</p>
+          <p>¡Tengo stickers!</p>
+          <p>Si estás interesado en contribuir a proyectos open source, yo te puedo dar un par de consejos para empezar
           </p>
-          <img src="img/isnt-about-money.gif" alt="Joker burning money scene" height="400px"/>
-
-          <aside class="notes">
-            <p>
-              Esta charla está enfocada en la parte del precio, aún muchas personas confunden open source con tener todo gratis
-            </p>
-          </aside>
-        </section>
-
-        <section>
-          <p>Probablemente uses software open source todos los días</p>
-          <p>En tu escuela/universidad</p>
-          <p>En tu trabajo</p>
-          <p>En tus tiempos de ocio</p>
-          <p class="fragment">Pero...</p>
-        </section>
-
-        <section class="center">
-          <h2>¿Pagaste algo por usarlo?</h2>
-          <aside class="notes">
-            <p>Probablemente estás haciendo dinero usando open source</p>
-          </aside>
-        </section>
-
-        <section class="center">
-          <h2>¿Diste algo a cambio por usarlo?</h2>
-          <aside class="notes">
-            <ul>
-              <li>
-                Probablemente lo descargaste, leíste la documentación, todo estaba perfectamente hecho.
-              </li>
-              <li>
-                Había un anuncio si podías donar algo al proyecto, lo ignoraste
-              </li>
-            </ul>
-          </aside>
-        </section>
-
-        <section class="center">
-          <img src="img/first-of-all.gif" alt="" height="400px"/>
-        </section>
-
-        <section class="center">
-          <p>
-            Software no crece en los árboles...
-          </p>
-          <p class="fragment">
-            <strong>Es escrito por personas</strong>
-          </p>
-          <img src="img/tree.gif" alt=""/>
-
-          <aside class="notes">
-            <p>Un poco obvio, pero vale la pena recordarlo</p>
-          </aside>
-        </section>
-
-        <section class="center">
-          <h2>Personas</h2>
-          <aside class="notes">
-            <ul>
-              <li>Personas que lo hacen en su tiempo libre</li>
-              <li>Como pasatiempo</li>
-              <li>Fuera de sus horas de trabajo</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <h2>Maintainers no son eternos</h2>
-          <p>
-            <del>Tranvia</del> Bus Factor
-          </p>
-          <small>
-            <a href="https://en.wikipedia.org/wiki/Bus_factor">
-              https://en.wikipedia.org/wiki/Bus_factor
-            </a>
-          </small>
-          <img src="img/tranvia.jpg" alt=""/>
-
-          <aside class="notes">
-            <p>
-              (ya que estamos en Cuenca, es el tranvia factor)
-            </p>
-            <p>
-              Es una medida del riesgo de que el conocimiento sobre un proyecto
-              no sea compartido con el resto en caso de que un miembro sea atropellado por un autobús.
-
-              Si sólo una persona tiene conocimiento del proyecto, no está bien.
-            </p>
-            <p>
-              Entre más alto es el factor del autobus, mejor.
-              Es decir, entre más personas hayan para ser atropelladas, mejor.
-            </p>
-          </aside>
-        </section>
-
-        <section>
-          <h2>Sus vidas continuán más allá de las computadoras</h2>
-          <p>La personas tienen otras actividades, tienen familia, un trabajo, etc</p>
-          <img src="img/sleeping-on-computer.gif" alt=""/>
-
-          <aside class="notes">
-            <p>
-              Las personas no pueden estar toda su vida manteniendo un proyecto,
-              usan su tiempo para otras actividades, y está bien.
-            </p>
-          </aside>
-        </section>
-
-        <section>
-          <h2>Pierden el interés</h2>
-          <p>Paquete de NPM infectado con backdoor</p>
-          <small>
-            <a href="https://github.com/dominictarr/event-stream/issues/116" target="_blank">
-              https://github.com/dominictarr/event-stream/issues/116
-            </a>
-          </small>
-          <img src="img/npm-package-backdoor.png" alt=""/>
-
-          <aside class="notes">
-            <p>
-              Cada día aprendemos cosas nuevas,
-              cambiamos o dejamos de usar herramientas, frameworks, lenguajes de programación.
-              Y está bien.
-            </p>
-            <p>
-              Este caso del año pasado,
-              un paquete popular de NPM fue infectado con un backdoor,
-              el mantainer cedió el proyecto a otra pesona, quien resultó ser un usuario malicioso.
-              ¿La razón? El mantainer ya no usaba ese proyecto.
-            </p>
-          </aside>
-        </section>
-
-        <section>
-          <h2>Stress (burnout)</h2>
-          <div style="text-align: left;">
-            <img src="img/guido.jpg" alt=""/ style="float: left; margin: 1em;">
-            <p>
-              I don't ever want to have to fight so hard for a
-              PEP and find that so many people despise my decisions...
-              I'm tired, and need a very long break.
-            </p>
-            <em>Guido van Rossum, Julio 2018</em>
-          </div>
-          <small>
-            <a href="https://mail.python.org/pipermail/python-committers/2018-July/005664.html" target="_blank">
-              https://mail.python.org/pipermail/python-committers/2018-July/005664.html
-            </a>
-          </small>
-
-          <aside class="notes">
-            <p>
-              El internet es un lugar muy caótico.
-              A veces necesitamos un descanso.
-              Y está bien.
-            </p>
-            <p>
-              Guido van Rossum,creador de Python, renunció a su cargo de dictador benevolente de por vida.
-              ¿La razón? Un nuevo feature del lenguaje fue aprobado por Guido y hubo muchas controversias, mcuhas quejas,
-              pero pocas soluciones. El feature se había propuest hace mucho tiempo, pero nadie lo tomó en cuenta.
-            </p>
-          </aside>
-        </section>
-
-        <section class="center">
-          <h2>Personas...</h2>
-          <aside class="notes">
-            <p>
-              Todo el software open source que usamos depende de algo tan frágil.
-              Personas, y en muchos casos no personas, sino persona.
-            </p>
-          </aside>
-        </section>
-
-        <section>
-          <div>
-            <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu producto</p>
-            <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu trabajo</p>
-            <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu profesión</p>
-            <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu empresa</p>
-            <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu libertad</p>
-            <p style="display: inline-block; margin: 1em;" class="fragment grow">Tu seguridad</p>
-          </div>
-          <p>
-            Dependen de software open source...
-          </p>
-
-          <aside class="notes">
-            <p>
-              Todas estas cosas y más dependen del open source
-            </p>
-          </aside>
-        </section>
-
-        <section>
-          <p>
-            ...y probablemente no estás haciendo <strong>nada para mantenerlo</strong>
-          </p>
-          <img src="img/this-is-fine.jpg" alt=""/>
-
-          <aside class="notes">
-            <p>
-              Y no, no está bien.
-              Adiós a tu framework favorito, a tu lenguaje de programación favorito.
-              Y el editor/IDE en donde escribes tu código, a tu navegador también dile adiós.
-            </p>
-            <p>
-              Esto no suena bien...
-            </p>
-          </aside>
-        </section>
-
-        <section class="center">
-          <h2>¿Cómo puedo ayudar?</h2>
-        </section>
-
-        <section>
-          <h2>¿Cómo puedo ayudar?</h2>
-          <section>
-            <ul>
-              <li>Donando tu dinero</li>
-              <li>Donando tu tiempo</li>
-              <li>Donando tu conocimiento</li>
-              <li>Donando tus habilidades</li>
-            </ul>
-
-            <aside class="notes">
-              <p>
-                Dinero, motiva a los mantainers, probablemente tomar el proyecto como si fuera un trabajo
-              </p>
-              <p>
-                Tu tiempo y conocimiento enviando mejoras, ayudando a solucionar problemas
-              </p>
-              <p>
-                Open source es más que software: Difusión, redes sociales, documentación, diseño, asuntos legales
-              </p>
-              <p>
-                Habla con tus jefes, para que puedas usar horas de trabajo para mantener proyectos open source
-                que la empresa depende de
-              </p>
-            </aside>
-          </section>
-
-          <section>
-            <p>
-              Donar...
-            </p>
-
-            <aside class="notes">
-              Donar... esa palabra no me gusta, suena como algo opcional, algo que no lo vamos a hacer
-            </aside>
-          </section>
-
-          <section>
-            <pre style="text-align: center;">s/Donando/Intercambiando/</pre>
-            <ul>
-              <li>Intercambiando tu dinero</li>
-              <li>Intercambiando tu tiempo</li>
-              <li>Intercambiando tu conocimiento</li>
-              <li>Intercambiando tus habilidades</li>
-            </ul>
-
-            <aside class="notes">
-              <p>Aún podríamos mejorar esto, pero está bien por ahora.</p>
-              <p>Por qué mejorarlo? A mi punto de vista son las instituciones, empresas quienes más se benefician del open source y comunidades, no al revés.</p>
-            </aside>
-          </section>
-        </section>
-
-        <section>
-          <h2>Open source es más que computadoras</h2>
-          <section>
-            <p>Sé amable y respetuoso con la comunidad, nadie les está pagando para leer tus comentarios quejándote</p>
-
-            <aside class="notes">
-              <p>Evita causar burnout a los mantainers</p>
-              <p>Ayuda a buscar soluciones, no sólo problemas</p>
-            </aside>
-          </section>
-
-          <section>
-            <p>Ayuda difundiendo, organizando eventos, participa en tus comunidades locales</p>
-
-            <aside class="notes">
-              Escribiendo un blog, dándo charlas sobre el proyecto.
-              Organizando eventos como este.
-            </aside>
-          </section>
-        </section>
-
-        <section>
-          <h2>Y si, se puede generar dinero con proyectos open source</h2>
-          <p>Varios proyectos son auto sustentables o generan ingresos a sus mantainers</p>
-          <ul>
-            <li>Neovim</li>
-            <li>Django Rest Framework</li>
-            <li>Read the Docs</li>
-            <li>Y muchos más, pero aún así estos proyectos necesitan de tu ayuda</li>
-          </ul>
-
-          <aside class="notes">
-            <p>Existen varios modelos de negocio al rededor de software open source</p>
-            <p>Rcuerda que no se trata sobre precio o dar todo gratis</p>
-          </aside>
-        </section>
-
-        <section>
-          <li>
-            3. La libertad de mejorar el programa y hacer públicas esas mejoras a los demás,
-            <strong>de modo que toda la comunidad se beneficie</strong>
-          </li>
-          <aside class="notes">
-            <p>Recuerda la libertad número 3, se trata de que toda la comunidad se beneficie.</p>
-          </aside>
-        </section>
-
-        <section>
-          <h2>
-            ¿Estás listo para pasar de ser consumidor a ser colaborador?
-          </h2>
-          <footer class="footer fragment">
-            <p>
-              <small class="text-center">
-                <a href="https://stsewd.github.io/">
-                  <span>
-                    Más sobre mi
-                  </span>
-                  <br />
-                  <span>https://stsewd.github.io/</span>
-                </a>
-              </small>
-            </p>
-
-            <p>
-              <small class="text-center">
-                <a href="https://github.com/stsewd/charla-open-source-no-es-gratis">
-                  <span>
-                    Código fuente en GitHub <i class="fas fa-code-branch"></i>
-                  </span>
-                  <br />
-                  <span>https://github.com/stsewd/charla-open-source-no-es-gratis/</span>
-                </a>
-              </small>
-            </p>
-
-            <p>
-              <small>
-                @stsewd
-                <a href="http://github.com/stsewd"><i class="fab fa-github"></i></a>
-                <a href="http://twitter.com/stsewd"><i class="fab fa-twitter"></i></a>
-              </small>
-            </p>
-          </footer>
-
-          <aside class="notes">
-            <p>¿Preguntas?</p>
-            <p>¡Tengo stickers!</p>
-            <p>Si estás interesado en contribuir a proyectos open source, yo te puedo dar un par de consejos para empezar</p>
-          </aside>
-        </section>
-      </div>
+        </aside>
+      </section>
     </div>
+  </div>
 
-    <script src="js/reveal.js"></script>
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      center: false,
+      maxScale: 0.7,
 
-    <script>
-      // More info about config & dependencies:
-      // - https://github.com/hakimel/reveal.js#configuration
-      // - https://github.com/hakimel/reveal.js#dependencies
-      Reveal.initialize({
-        history: true,
-        center: false,
-        maxScale: 0.7,
-        dependencies: [
-          { src: 'plugin/markdown/marked.js' },
-          { src: 'plugin/markdown/markdown.js' },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true }
-        ]
-      });
-    </script>
-  </body>
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
 </html>
