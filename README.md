@@ -15,20 +15,8 @@ Slides creados con [reveal.js](https://github.com/hakimel/reveal.js).
 
 - Haz un fork del proyecto
 - Crea una nueva rama
-- Haz los cambios
+- Haz los cambios en `index.html`
 - ¡Envía un pull request!
-
-### Estructura del proyecto
-
-| Archivo          | Descripción                                  |
-|------------------|----------------------------------------------|
-| `css/`           | Hojas de estilo usadas por reveal.js         |
-| `css/custom.css` | Estilos personalizados para esta diapositiva |
-| `img/`           | Imágenes usadas en los slides                |
-| `js/`            | Librería reveal.js                           |
-| `lib/`           | Librerías usadas por reveal.js               |
-| `plugin/`        | Plugins usados en el proyecto                |
-| `index.html`     | Contenido de los slides                      |
 
 ### Visualización
 
