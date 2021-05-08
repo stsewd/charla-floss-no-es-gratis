@@ -37,4 +37,3 @@ recomiendo usar [live-preview](https://www.npmjs.com/package/live-server).
 
 Instálalo con `npm install -g live-server` y ejecuta el comando `live-server`
 sobre el directorio del proyecto.
-
